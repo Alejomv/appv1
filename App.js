@@ -1,13 +1,18 @@
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View, Image } from "react-native";
-import Vista1 from "./vista1";
+import "react-native-gesture-handler";
+import React from "react";
+import { StyleSheet } from "react-native";
+import { NavigationContainer } from "@react-navigation/native";
+import NavigationStack from "./src/navigation/NavigationStack";
+import NavigationTab from "./src/navigation/NavigationTab";
+
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Vista1 />
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      {/* <NavigationStack /> */}
+       <NavigationTab /> 
+     
+    </NavigationContainer>
   );
 }
 

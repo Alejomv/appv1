@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
+import { NavigationContainer } from '@react-navigation/native';
 import { View, Text, TextInput, Button, StyleSheet, ScrollView, Alert } from 'react-native';
+
+
+
 
 const Calculadora = () => {
   const [simple, setSimple] = useState({ manzanas: '', costo_manzanas: '', manzanas_deseadas: '' });
@@ -30,6 +34,7 @@ const Calculadora = () => {
   };
 
   return (
+   
     <ScrollView style={styles.container}>
       <View style={{ marginTop: 40 }}>
         <Text style={styles.title}>Regla de Tres Simple</Text>
@@ -70,6 +75,7 @@ const Calculadora = () => {
         <View style={{ height: 40 }} />
       </View>
     </ScrollView>
+   
   );
 };
 
